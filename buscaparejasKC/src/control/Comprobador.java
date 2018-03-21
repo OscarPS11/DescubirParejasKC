@@ -7,8 +7,10 @@ public class Comprobador implements Comprobable{
 
 	@Override
 	public Boolean CompararCasilla(Casilla casillaUno, Casilla casillaDos) {
-		// TODO Auto-generated method stub
-		return null;
+		assert (casillaUno.isVisible()&&casillaDos.isVisible());
+		if (casillaUno.getIdentificador()==casillaDos.getIdentificador()) {
+			return true;
+		} else return false;
 	}
 
 	@Override
