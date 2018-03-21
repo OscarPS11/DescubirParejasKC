@@ -29,6 +29,21 @@ class IniciadorTest {
 						(iniciador.getTablero().getCasilla().length*iniciador.getTablero().getCasilla()[i].length)/2);
 			}
 		}
+		int contadorPareja;
+		for (int i = 0; i < iniciador.getTablero().getCasilla().length; i++) {
+			for (int j = 0; j < iniciador.getTablero().getCasilla()[i].length; j++) {
+				for (int k = 0; i < iniciador.getTablero().getCasilla().length; i++) {
+					for (int m = 0; j < iniciador.getTablero().getCasilla()[i].length; j++) {
+						if(iniciador.getTablero().getCasilla()[i][j].getIdentificador()==iniciador.getTablero().getCasilla()[k][m].getIdentificador()) {
+							contadorPareja++;
+						}
+						assertTrue(contadorPareja<2);
+					}
+				}
+				contadorPareja=0;
+			}
+		}
+		
 		iniciador.desordenarCasillas();
 		int contador;
 		boolean masDe4Seguidas = false;
