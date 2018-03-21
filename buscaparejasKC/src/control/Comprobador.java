@@ -7,7 +7,7 @@ public class Comprobador implements Comprobable{
 
 	@Override
 	public Boolean CompararCasilla(Casilla casillaUno, Casilla casillaDos) {
-		// TODO Auto-generated method stubb
+		// TODO Auto-generated method stubf
 		return null;
 	}
 
