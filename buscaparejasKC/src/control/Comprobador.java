@@ -20,10 +20,7 @@ public class Comprobador implements Comprobable{
 				if (!tablero.getCasilla()[i][j].isVisible()) {
 					return false;
 				}
-				
-				
 			}
-			
 		}
 		return true;
 	}
